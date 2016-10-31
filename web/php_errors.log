@@ -1,0 +1,14 @@
+[31-Oct-2016 13:51:17 Europe/Moscow] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'The directory "/var/www/vhosts/test1/var/cache/prod/annotations" is not writable.' in /var/www/vhosts/test1/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FileCache.php:92
+Stack trace:
+#0 /var/www/vhosts/test1/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FilesystemCache.php(37): Doctrine\Common\Cache\FileCache->__construct('/var/www/vhosts...', '.doctrinecache....', 2)
+#1 /var/www/vhosts/test1/var/cache/prod/appProdProjectContainer.php(406): Doctrine\Common\Cache\FilesystemCache->__construct('/var/www/vhosts...')
+#2 /var/www/vhosts/test1/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php(274): appProdProjectContainer->getAnnotationReaderService()
+#3 /var/www/vhosts/test1/var/cache/prod/appProdProjectContainer.php(2271): Symfony\Component\DependencyInjection\Container->get('annotation_read...')
+#4 /var/www/vhosts/test1/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php(274): appProdProjectCon in /var/www/vhosts/test1/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FileCache.php on line 92
+[31-Oct-2016 15:00:04 Europe/Moscow] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'The directory "/var/www/vhosts/test1/var/cache/prod/annotations" is not writable.' in /var/www/vhosts/test1/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FileCache.php:92
+Stack trace:
+#0 /var/www/vhosts/test1/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FilesystemCache.php(37): Doctrine\Common\Cache\FileCache->__construct('/var/www/vhosts...', '.doctrinecache....', 2)
+#1 /var/www/vhosts/test1/var/cache/prod/appProdProjectContainer.php(406): Doctrine\Common\Cache\FilesystemCache->__construct('/var/www/vhosts...')
+#2 /var/www/vhosts/test1/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php(274): appProdProjectContainer->getAnnotationReaderService()
+#3 /var/www/vhosts/test1/var/cache/prod/appProdProjectContainer.php(2274): Symfony\Component\DependencyInjection\Container->get('annotation_read...')
+#4 /var/www/vhosts/test1/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php(274): appProdProjectCon in /var/www/vhosts/test1/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FileCache.php on line 92

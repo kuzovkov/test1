@@ -1,0 +1,5 @@
+AppBundle\Entity\BlogPost:
+
+    lifecycleCallbacks:
+        prePersist:   [ uploadImage ]
+        preUpdate:    [ uploadImage ]
